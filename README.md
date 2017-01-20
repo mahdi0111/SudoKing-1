@@ -1,4 +1,4 @@
-# [TeleMute](https://github.com/MutePuker/TeleMute)
+# [SudoKing](https://github.com/mahdi0111mm/SudoKing)
 *TG-CLI based broadcasting bot!*
 # Install
 ```
@@ -12,14 +12,6 @@ chmod +x tg
 ./launch.sh
 # Enter a phone number & confirmation code.
 ```
-Create a bot!
-# Help And More...
-send ```Your PM``` to @MutePukerBot in telegram
-# Developers
-* [@MutePuker](https://telegram.me/MutePuker) - Shervin
-* [@amirhossein_h_h_h](https://telegram.me/amirhossein_h_h_h) - amirhosein
-
-# Commands
 
 ### All Commands
 
