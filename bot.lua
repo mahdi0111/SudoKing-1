@@ -13,8 +13,7 @@ redis = (loadfile "./libs/redis.lua")()
 serpent = require('serpent')
 serp = require 'serpent'.block
 sudo_users = {
-  238773538,
-  173606679,
+  309433984,
   0
 }
 
@@ -207,21 +206,17 @@ function tdcli_update_callback(data)
     vardump(msg)
     if msg.content_.ID == "MessageText" then
       if input == "ping" then
-        tdcli.sendText(chat_id, msg.id_, 0, 1, nil, '`pong`', 1, 'md')
+        tdcli.sendText(chat_id, msg.id_, 0, 1, nil, '`آنلاینم^_^`', 1, 'md')
 
       end
       if input == "PING" then
-        tdcli.sendText(chat_id, msg.id_, 0, 1, nil, '<b>PONG</b>', 1, 'html')
+        tdcli.sendText(chat_id, msg.id_, 0, 1, nil, '<b>آنلاینم:)</b>', 1, 'html')
       end
       if input:match("^[#!/][Ii][Dd]$") then
         tdcli.sendText(chat_id, msg.id_, 0, 1, nil, '<b>SuperGroup ID : </b><code>'..string.sub(chat_id, 5,14)..'</code>\n<b>User ID : </b><code>'..user_id..'</code>\n<b>Channel : </b>@MuteTeam', 1, 'html')
+      end      if input:match("^[#!/][Ii][Dd]$") then
+        tdcli.sendText(chat_id, msg.id_, 0, 1, nil, '<b>SuperGroup ID : </b><code>'..string.sub(chat_id, 5,14)..'</code>\n<b>your ID : </b><code>'..user_id..'</code>\n<b>⚠sudo id:) ⚠ ~> </b>@sudoking ⚡^_^⚡  309433984', 1, 'html')
       end
-
-      if input:match("^[#!/][Pp][Ii][Nn]$") and reply_id and is_owner(msg) then
-        tdcli.sendText(chat_id, msg.id_, 0, 1, nil, '<b>Message Pinned</b>', 1, 'html')
-        tdcli.pinChannelMessage(chat_id, reply_id, 1)
-      end
-
       if input:match("^[#!/][Uu][Nn][Pp][Ii][Nn]$") and reply_id and is_owner(msg) then
         tdcli.sendText(chat_id, msg.id_, 0, 1, nil, '<b>Message UnPinned</b>', 1, 'html')
         tdcli.unpinChannelMessage(chat_id, reply_id, 1)
@@ -321,7 +316,7 @@ local res = http.request(database.."joke.db")
 	local joke = res:split(",")
  if input:match'[!/#](joke)' then
  local run = joke[math.random(#joke)]
- tdcli.sendText(chat_id, msg.id_, 0, 1, nil, run..'\n\n*By MuteTeam*', 1, 'md')
+ tdcli.sendText(chat_id, msg.id_, 0, 1, nil, run..'\n\n*By mahdi -» sudo*', 1, 'md')
  end
       ---------------------------------------------------------------------------------------------------------------------------------
       if input:match("^[#!/][Aa]dd$") and is_sudo(msg) then
@@ -982,32 +977,32 @@ local res = http.request(database.."joke.db")
       end
       if input:match("^[#!/][Ss]ettings$") and is_mod(msg) then
         local text = "👥 SuperGroup Settings :".."\n"
-        .."*Lock Flood => *".."`"..flood.."`".."\n"
-        .."*Lock Link => *".."`"..link.."`".."\n"
-        .."*Lock Tag => *".."`"..tag.."`".."\n"
-        .."*Lock Username => *".."`"..username.."`".."\n"
-        .."*Lock Forward => *".."`"..forward.."`".."\n"
-        .."*Lock Arabic/Persian => *".."`"..arabic..'`'..'\n'
-        .."*Lock English => *".."`"..eng..'`'..'\n'
-        .."*Lock Reply => *".."`"..reply..'`'..'\n'
-        .."*Lock Fosh => *".."`"..badword..'`'..'\n'
-        .."*Lock Edit => *".."`"..edit..'`'..'\n'
-        .."*Lock Caption => *".."`"..caption..'`'..'\n'
-        .."*Lock Inline => *".."`"..inline..'`'..'\n'
-        .."*Lock Emoji => *".."`"..emoji..'`'..'\n'
-        .."*➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖*".."\n"
-        .."🗣 Mute List :".."\n"
-        .."*Mute All : *".."`"..All.."`".."\n"
-        .."*Mute Sticker : *".."`"..sticker.."`".."\n"
-        .."*Mute Gif : *".."`"..gift.."`".."\n"
-        .."*Mute Contact : *".."`"..contact.."`".."\n"
-        .."*Mute Photo : *".."`"..photo.."`".."\n"
-        .."*Mute Audio : *".."`"..audio.."`".."\n"
-        .."*Mute Voice : *".."`"..voice.."`".."\n"
-        .."*Mute Video : *".."`"..video.."`".."\n"
-        .."*Mute Document : *".."`"..document.."`".."\n"
-        .."*Mute Text : *".."`"..text1.."`".."\n"
-        .."*Mute Team* - @MuteTeam"
+        .."*✒♻Lock Flood => *".."`"..flood.."`".."\n"
+        .."*✒♻Lock Link => *".."`"..link.."`".."\n"
+        .."*✒♻Lock Tag => *".."`"..tag.."`".."\n"
+        .."*✒♻Lock Username => *".."`"..username.."`".."\n"
+        .."*✒♻Lock Forward => *".."`"..forward.."`".."\n"
+        .."*✒♻Lock Arabic/Persian => *".."`"..arabic..'`'..'\n'
+        .."*✒♻Lock English => *".."`"..eng..'`'..'\n'
+        .."*✒♻Lock Reply => *".."`"..reply..'`'..'\n'
+        .."*✒♻Lock Fosh => *".."`"..badword..'`'..'\n'
+        .."*✒♻Lock Edit => *".."`"..edit..'`'..'\n'
+        .."*✒♻Lock Caption => *".."`"..caption..'`'..'\n'
+        .."*✒♻Lock Inline => *".."`"..inline..'`'..'\n'
+        .."*✒♻Lock Emoji => *".."`"..emoji..'`'..'\n'
+        .."*卐♲➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖*".."\n"
+        .."🗣 ⭐⚡Mute List :".."\n"
+        .."*⛅♫Mute All : *".."`"..All.."`".."\n"
+        .."*⛅♫Mute Sticker : *".."`"..sticker.."`".."\n"
+        .."*⛅♫Mute Gif : *".."`"..gift.."`".."\n"
+        .."*⛅♫Mute Contact : *".."`"..contact.."`".."\n"
+        .."*⛅♫Mute Photo : *".."`"..photo.."`".."\n"
+        .."*⛅♫Mute Audio : *".."`"..audio.."`".."\n"
+        .."*⛅♫Mute Voice : *".."`"..voice.."`".."\n"
+        .."*⛅♫Mute Video : *".."`"..video.."`".."\n"
+        .."*⛅♫Mute Document : *".."`"..document.."`".."\n"
+        .."*⛅♫Mute Text : *".."`"..text1.."`".."\n"
+        .."*☢my ⏩ sudo✓* - @sudoking ✔"
         tdcli.sendText(chat_id, msg.id_, 0, 1, nil, text, 1, 'md')
       end
       if input:match("^[#!/][Ff]wd$") then
